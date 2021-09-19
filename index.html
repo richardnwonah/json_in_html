@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JsonTest</title>
+</head>
+<body>
+    <script>
+        let companies = `[
+   {
+       "name": "Big Corporation",
+       "numberOfEmployees": 1000,
+       "ceo": "Mary",
+       "rating": 3.6
+   },
+   {
+    "name": "Small Startup",
+    "numberOfEmployees": 3,
+    "ceo": null,
+    "rating": 4.3
+}
+]`
+    console.log(JSON.parse(companies));
+    let jsoncompany = JSON.parse(companies);
+ 
+    </script>
+</body>
+
+<h1 id="content">...</h1>
+<script>document.getElementById("content").innerHTML = jsoncompany[1].name</script>
+</html>
